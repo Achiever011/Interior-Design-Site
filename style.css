@@ -1,6 +1,6 @@
 /* Nav link transition properties */
 
-*{padding: 0;    margin: 0;}
+*{padding: 0;    margin: 0; overflow-x: hidden;}
 
 header{
     text-align: center;
@@ -12,7 +12,7 @@ header{
 }
 header .current a{
     color: brown;
-    text-shadow: 1px 1px 1px;
+    /* text-shadow: 1px 1px 1px; */
 }
 
 .white{
@@ -25,12 +25,13 @@ header a{
     font-size: 1.5rem;
     padding: 5px;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: .5s;
 }
 
 header a:hover{
-    color: #9CC3D5FF;
-    background-color: #fff;
+    color: rgb(72, 132, 160);
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
 header p{
@@ -41,8 +42,8 @@ header p{
     text-decoration: none;
     list-style: none;
     float: left;
-    margin-right: 30px;
-    
+    margin-right: 3%;
+   overflow: hidden; 
    
     
     
@@ -172,11 +173,11 @@ input[type="text"]{
     transition-property:all;
     
 }
-.image2:hover + .image-description2{
+/* .image2:hover + .image-description2{
     color:#FFF;
     opacity: 1;
     
-}
+} */
 
 
 
@@ -187,36 +188,54 @@ input[type="text"]{
 /* Services */
 #services{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    overflow:hidden;
-    margin-top:0; 
     border-top: 2px solid brown;
     text-align: center;
-    background-color: rgba(157, 255, 0,.5)
+    background-color: rgba(157, 255, 0,.5);
+    overflow-x: hidden;
+    /* display: flex; */
 }
-.furniture{
-    margin-right: 20px;
-}
+
 #services h2{
-    padding: 50px;
+    display: block;
+    padding: 2%;
     color: brown;
     text-shadow: 1px 1px 1px #000;
 }
 .container2{
     display: flex;
-    float: left;
-    width: 100%;
-    margin-left: 30px;
-    gap: 20px;
-    
+    border: 1px solid red;
 }
 
 #services img{
+    /* width: 100%; */
     width: 300px;
+    /* box-sizing: border-box; */
     height: 300px;
-    align-self: center;
-    display: block;
-    box-sizing: border-box;
+    margin-bottom: 5%;
+    
 }
+
+#services img:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+.lightening,
+.bedding,
+.decorations,
+.furniture{
+        display: inline-block;
+        padding: 2%;
+
+
+        width: 20%;
+        /* margin-bottom: 5%; */
+        /* text-align: center; */
+        float: none;
+       
+}
+
+
 @media screen and (max-width:700px){
     *{
         padding: 0;
@@ -227,29 +246,29 @@ input[type="text"]{
         padding: 2px;
         margin: 5px;
         box-sizing: border-box;
-        overflow-x: hidden;
+        overflow-x: none;
         text-align: center;
     }
     #services .container2{
        display: block;
        float: none;
-       width: 90%;
+       width: 100%;
        margin-bottom: 20px;
-       overflow: hidden;
+       overflow: none;
        padding: 20px;
        box-sizing: border-box;
-       margin-right: 10px;
-       
     }
     .lightening,
     .bedding,
     .decorations,
     .furniture{
+        /* display: block; */
         padding: 10px;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
         width: 100%;
-        margin-bottom: 100px;
-        height: auto;
+        margin-bottom: 5%;
+        text-align: center;
+        float: none;
        
     }
     .image-description01,
@@ -257,7 +276,7 @@ input[type="text"]{
     .image-description03,
     .image-description04{
         text-align: center;
-        padding: 5px;
+        padding: 5%;
         float: none;
         margin-right: 10px;
     }
@@ -266,13 +285,13 @@ input[type="text"]{
         text-align: center;
     }
 }
-@media screen and (min-width:1200px){
+/* @media screen and (min-width:1200px){
     .container2{
         width: 50%;
         display: flex;
-    }
+    } */
     
-}
+
 /* End Services */
 
 
