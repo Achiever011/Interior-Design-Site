@@ -1,28 +1,47 @@
 /* Nav link transition properties */
-
-*{padding: 0;    margin: 0; overflow-x: hidden;}
+/* AAED4559*/
+*{padding: 0;    
+    margin: 0; 
+    overflow-x: hidden; 
+    /* width: 100%; */
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
 
 header{
+    background-image: url("Images/Residential-Living-Room-Interior-Design-by-Decor-City-Nigeria-02.jpg");
+    
+    background-color: rgba(0, 0, 0, .8);
+    background-blend-mode: darken;
+    /* opacity: 0.4; */
     text-align: center;
     padding: 30px;
     margin-bottom: 30px;
-    background-color:#0063B2FF;
-    color:#9CC3D5FF;
+    /* background-color:#1A2442; */
+    color:rgb(91, 122, 136);
     border-bottom: 3px solid brown;
 }
 header .current a{
     color: brown;
-    /* text-shadow: 1px 1px 1px; */
+    text-shadow: .5px .5px .5px;
 }
-
+header h1 img{
+    display: block;
+    margin: 0% 50% 0% 50%;
+    text-align: center;
+    /* border: 1px red solid; */
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
+}
 .white{
     color: #fff;
 }
 header a{
     text-decoration: none;
     color: #fff;   
-    border-radius: 4px;
-    font-size: 1.5rem;
+    /* border-radius: 10px; */
+    /* font-size: 1.5rem; */
     padding: 5px;
     transition-property: all;
     transition-duration: .5s;
@@ -30,8 +49,12 @@ header a{
 
 header a:hover{
     color: rgb(72, 132, 160);
+    /* color: #E3BCC0; */
     background-color: #ffffff;
-    border-radius: 10px;
+    width: fit-content;
+    /* height: 20%; */
+    border-radius: 30%;
+    padding: 20px 20px;
 }
 
 header p{
@@ -44,7 +67,7 @@ header p{
     float: left;
     margin-right: 3%;
    overflow: hidden; 
-   
+   padding: 5px 0px;
     
     
 }
@@ -56,20 +79,30 @@ header p{
 
 .intro{
     padding: 50px 70px 50px 70px;
-    background-image: url(images/spiral-yellow.jpg);
+    color: #000;
+    background-color: #BDC9AA
+
+;
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     line-height: 30px;
-    text-shadow: 1px 1px 1px;
-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    /* text-shadow: 1px 1px 1px; */
    
 }
 .intro h2{
     text-align: center;
-    color:#000 ;
-    text-shadow: 1px 1px 1px;
+    color:#000;
+    overflow: hidden;
+
 }
+.intro p{
+    margin: 10% 10%;
+}
+
 .newsletter{
     background-color: #0063B2FF;
     padding: 30px;
@@ -118,16 +151,12 @@ input[type="text"]{
 }
 
 
-/* Photo Grid */
+
+
+/*        PHOTO GRID     */
 #photo-grid{
-    display:flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-basis: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: #9CC3D5FF;
-    padding: 30px;
+    
+    background-color: #F5F5DC;
     border-bottom: 2px solid brown;
     margin-bottom: 0;
     
@@ -136,9 +165,9 @@ input[type="text"]{
 #photo-grid img{
     width: 300px;
     height: 300px;
-    display: block;
+    display: inline-block;
     box-sizing: border-box;
-    border-radius: 20%;
+    border-radius: 5%;
   
     
 }
@@ -146,51 +175,43 @@ input[type="text"]{
 #photo-grid .image2,
 #photo-grid .image3,
 #photo-grid .image4{
-    position: relative;
-    
-    
-    width: 40%;
-    margin-left:50px;
-    margin-top:50px;
-    padding: 5px;
-    float: left;
-    box-sizing: border-box;
+    padding: 2%;
 }
+
 #photo-grid .image-description1,
 #photo-grid .image-description2,
 #photo-grid .image-description3,
 #photo-grid .image-description4{
-    position: absolute;
-    top: 200px;
-
-    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    font-size: small;
+    box-sizing:border-box;
     color: #fff;
-    text-shadow: 1px 1px 1px;
+    width:auto;
     padding: 10px;
     background-color: rgba( 103, 79, 79,.5);
     border-radius: 40px;
-    opacity: 0;
-    transition-property:all;
+    /* transition-property:all; */
     
 }
-/* .image2:hover + .image-description2{
-    color:#FFF;
-    opacity: 1;
-    
-} */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+/*     END OF PHOTO GRID     */
 
 
 
 
-/* End Photo-grid */
-
-
-/* Services */
+/*     SERVICES     */
 #services{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    border-top: 2px solid brown;
     text-align: center;
-    background-color: rgba(157, 255, 0,.5);
+    /* background-color: rgba(157, 255, 0,.5); */
+    background-color: #BDC9AA;
     overflow-x: hidden;
     /* display: flex; */
 }
@@ -203,7 +224,9 @@ input[type="text"]{
 }
 .container2{
     display: flex;
-    border: 1px solid red;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
 }
 
 #services img{
@@ -226,14 +249,14 @@ input[type="text"]{
 .furniture{
         display: inline-block;
         padding: 2%;
-
-
         width: 20%;
         /* margin-bottom: 5%; */
         /* text-align: center; */
         float: none;
        
 }
+
+
 
 
 @media screen and (max-width:700px){
@@ -243,14 +266,18 @@ input[type="text"]{
     }
     #services{
         width: 100%;
-        padding: 2px;
-        margin: 5px;
+        /* padding: 2px;
+        margin: 5px; */
         box-sizing: border-box;
-        overflow-x: none;
+        overflow-x: hidden;
         text-align: center;
+        /* display: flex;
+       justify-content: space-evenly;
+       flex-wrap: wrap; */
     }
     #services .container2{
-       display: block;
+       
+       text-align: center;
        float: none;
        width: 100%;
        margin-bottom: 20px;
@@ -285,28 +312,62 @@ input[type="text"]{
         text-align: center;
     }
 }
-/* @media screen and (min-width:1200px){
-    .container2{
-        width: 50%;
-        display: flex;
-    } */
     
 
-/* End Services */
+/*        END OF SERVICES     */
 
 
+.bigpicture{
+    display: block;
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid red; */
+
+}
+
+.multiple{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.multiple img{
+    
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    /* border: 1px solid red; */
+    overflow:hidden;
+    
+}
+.multiple img:hover{
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+
+
+
+
+/*    FOOTER   */
 footer{
     padding: 20px;
     text-align: center;
     margin-top: 10px;
     color: #9CC3D5FF;
-    background-color: #0063B2FF;
+    background-color: #1A2442;
     font-weight: bold;
 }
 
 
 
-/* Contact Us Page */
+/*   CONTACT US PAGE   */
 
 .contact{
     margin: 50px;
