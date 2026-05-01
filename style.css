@@ -275,59 +275,6 @@ label[for="last-name"] {
 
 
 
-@media screen and (max-width:700px){
-    *{
-        padding: 0;
-        margin: 0;
-    }
-    #services{
-        width: 100%;
-        /* padding: 2px;
-        margin: 5px; */
-        box-sizing: border-box;
-        overflow-x: hidden;
-        text-align: center;
-        /* display: flex;
-       justify-content: space-evenly;
-       flex-wrap: wrap; */
-    }
-    #services .container2{
-       
-       text-align: center;
-       float: none;
-       width: 100%;
-       margin-bottom: 20px;
-       overflow: none;
-       padding: 20px;
-       box-sizing: border-box;
-    }
-    .lightening,
-    .bedding,
-    .decorations,
-    .furniture{
-        /* display: block; */
-        padding: 10px;
-        /* box-sizing: border-box; */
-        width: 100%;
-        margin-bottom: 5%;
-        text-align: center;
-        float: none;
-       
-    }
-    .image-description01,
-    .image-description02,
-    .image-description03,
-    .image-description04{
-        text-align: center;
-        padding: 5%;
-        float: none;
-        margin-right: 10px;
-    }
-    .newsletter h3{
-        margin-bottom: 30px;
-        text-align: center;
-    }
-}
     
 
 /*        END OF SERVICES     */
@@ -337,7 +284,10 @@ label[for="last-name"] {
     display: block;
     text-align: center;
     width: 100%;
+    color: red;
+    filter: contrast(50%);
     /* border: 1px solid red; */
+     
 
 }
 
@@ -513,3 +463,107 @@ a:hover, #social-media a:hover{
     width: 20px;
 }
 
+
+
+/*    MEDIA QUERY    */
+
+/*  Tablet */
+@media screen and (max-width:768px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .multiple img {
+    width: 30%;
+    height: 30%;
+    /* text-align: center; */
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+    #services{
+        width: 100%;
+        /* padding: 2px;
+        margin: 5px; */
+        box-sizing: border-box;
+        overflow-x: hidden;
+        text-align: center;
+        /* display: flex;
+       justify-content: space-evenly;
+       flex-wrap: wrap; */
+    }
+    #services .container2{
+       
+       text-align: center;
+       float: none;
+       width: 100%;
+       margin-bottom: 20px;
+       overflow: none;
+       padding: 20px;
+       box-sizing: border-box;
+    }
+    .lightening,
+    .bedding,
+    .decorations,
+    .furniture{
+        /* display: block; */
+        padding: 10px;
+        /* box-sizing: border-box; */
+        width: 100%;
+        margin-bottom: 5%;
+        text-align: center;
+        float: none;
+       
+    }
+    .image-description01,
+    .image-description02,
+    .image-description03,
+    .image-description04{
+        text-align: center;
+        padding: 5%;
+        float: none;
+        margin-right: 10px;
+    }
+    .newsletter h3{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    label{
+        margin-left: -60px;
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+/* Phone */
+@media (max-width: 640px) { 
+    .intro{
+        padding: 7%;
+    }
+    .intro p {
+    margin: 5% 5%;
+    font-size: smaller;
+    }   
+
+    label{
+        margin-left: -60px;
+        text-align: left;
+    }
+    .about-us p {
+    margin: 5% 10%;
+    display: inline-block;
+    background-color: #ac835b;
+    padding: 5% 5%;
+    text-align: left;
+    }
+    .multiple img {
+    width: 49%;
+    height: 49%;
+    /* text-align: center; */
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+}
