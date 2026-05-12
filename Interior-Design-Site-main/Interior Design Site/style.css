@@ -1,0 +1,557 @@
+/* Nav link transition properties */
+*{
+    padding: 0;    
+    margin: 0; 
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+        overflow-x: hidden; 
+}
+
+header{
+    background-image: url("Images/Residential-Living-Room-Interior-Design-by-Decor-City-Nigeria-02.jpg");
+    background-color: rgba(0, 0, 0, .8);
+    background-blend-mode: darken;
+    text-align: center;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    color:rgb(91, 122, 136);
+    border-bottom: 3px solid brown;
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*          SCROLL EFFECT         */
+header.scrolled {
+    /* background-color: #1A2442; */
+    padding: 30px;      
+    margin-bottom: 0px;
+    border-bottom: 3px solid brown;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* shrink the logo image so it doesn't dominate the compact bar */
+header.scrolled h1 img {
+    width: 36px;
+    height: 36px;
+    padding-top: 0;
+    display: inline;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+/* keep h1 readable but smaller */
+header.scrolled h1 {
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+
+header.scrolled p {
+    display: none;
+}
+
+/* tighten nav spacing */
+header.scrolled .site-nav {
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+/*           END OF SCROLL EFFECT        */
+
+
+
+header .current a{
+    color: brown;
+    text-shadow: .5px .5px .5px;
+}
+header h1 img{
+    display: block;
+    margin: 0% 50% 0% 50%;
+    text-align: center;
+    /* border: 1px red solid; */
+    width: 60px;
+    height: 60px;
+    /* padding-top: 10px; */
+}
+.white{
+    color: #fff;
+    margin: 0;
+}
+header a{
+    text-decoration: none;
+    color: #fff;   
+    padding: 5px;
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+header a:hover{
+    color: rgb(72, 132, 160);
+    background-color: #ffffff;
+    width: fit-content;
+    border-radius: 30%;
+    padding: 20px 20px;
+}
+
+header p{
+    margin-bottom: 10px;
+    font-family: 'Dancing script', 'cursive';
+
+    
+}
+.site-nav li{
+    text-decoration: none;
+    list-style: none;
+    float: left;
+    margin-right: 3%;
+   overflow: hidden; 
+   padding: 5px 0px;
+    
+    
+}
+.site-nav{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+
+    
+}
+
+.intro{
+    padding: 50px 70px 50px 70px;
+    color: #000;
+    background-color: #BDC9AA;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;   
+}
+.intro h2{
+    text-align: center;
+    color:#000;
+    overflow: hidden;
+}
+
+.intro p{
+    margin: 7% 7%;
+}
+
+.newsletter{
+    text-align: center;
+    background-color: #1A2442;
+    color: #fff;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.newsletter h3{
+    color: #9CC3D5FF;
+    font-size:30px ;
+    width: 100%;
+}
+
+.newsletter label{
+    color: #9CC3D5FF;
+    font-size: 90%;
+    position: absolute;
+    left: 28%;
+}
+
+.newsletter form{
+    text-align: center;
+    color: #BDC9AA;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.subscribe{
+    display: block;
+    background-color: brown;
+    color: #9CC3D5FF;
+    padding: 10px 30px;
+    text-align: left;
+    border-radius: 2px;
+    width: 100%;
+    transition: all .5s;
+}
+
+.subscribe:hover{
+    color: #fff;
+    background-color:#ce2828 ;
+    border-radius: 10px;
+}
+
+input[type="email"],
+input[type="text"]{
+    font-size: 90%;
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.labelposition{
+    text-align: left;
+    border: 1px solid red;
+}
+
+
+
+/*        PHOTO GRID     */
+#photo-grid{
+    background-color: #F5F5DC;
+    border-bottom: 2px solid brown;
+    margin-bottom: 0;
+}
+
+#photo-grid img{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+#photo-grid .image1{
+    padding: 2%;
+}
+
+#photo-grid .image-description1{
+    position: relative;
+    text-align: center;
+    font-size: small;
+    box-sizing:border-box;
+    color: #fff;
+    padding: 10px;
+    background-color: rgba( 103, 79, 79,.5);
+    border-radius: 40px;    
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+/*     END OF PHOTO GRID     */
+
+
+
+/*     SERVICES     */
+#services{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align: center;
+    background-color: #BDC9AA;
+    overflow-x: hidden;
+}
+
+#services h2{
+    display: block;
+    padding: 2%;
+    color: brown;
+    text-shadow: 1px 1px 1px #000;
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.container2 p{
+    line-height: 150%;
+}
+
+#services img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 5%;
+}
+
+#services img:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+.lightening,
+.bedding,
+.decorations,
+.furniture{
+        display: inline-block;
+        padding: 2%;
+        width: 20%;
+        float: none;
+}
+/*        END OF SERVICES     */
+
+
+
+.bigpicture{
+    display: block;
+    text-align: center;
+    width: 100%;
+    filter: contrast(50%);
+}
+
+.multiple{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.multiple img{
+    
+    width: 250px;
+    height: 250px;
+    overflow:hidden;
+    
+}
+.multiple img:hover{
+    width: 250px;
+    height: 250px;
+    transition: all .5s;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+
+
+/*    FOOTER   */
+footer{
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: #9CC3D5FF;
+    background-color: #1A2442;
+    font-weight: bold;
+}
+
+
+
+
+
+/*                    ABOUT US PAGE              */
+
+.about-us{
+    background-image: url(images/Screenshot\ 2025-10-25\ 113553\ \(1\).png);
+    background-repeat: no-repeat;
+    /* padding: 10%; */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+.about-us h1 {
+    text-align: center;
+    color: #BDC9AA;
+    overflow: hidden;
+    margin-top: 2%;
+    background-color: #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.story h2{
+    text-align: center;
+    margin: 2%;
+}
+
+.about-us p{
+    margin: 5% 20%;
+    display: inline-block;
+    background-color: #ac835b;
+    padding: 5% 10%;
+    text-align: left;
+    line-height: 200%;
+}
+
+.subhead{
+    color: #000;
+    display: block;
+    margin-bottom: 5%;
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+}
+/*       ABOUT PAGE ENDS      */
+
+
+
+
+/*               CONTACT US PAGE     */
+
+#contact-wrap{
+    background-color: #BDC9AA;
+    padding-top: 5%;
+}
+
+.contact-h1{
+    text-align: center;
+    color: #BDC9AA;
+    overflow: hidden;
+    margin-top: 2%;
+    background-color: #fff;
+    margin: 3%;
+    display: block;
+}
+
+.contact{
+    line-height: 300%;
+    text-align: center;
+}
+
+#social-media{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#social-media a, a{
+    text-decoration: none;
+    color: #1A2442;
+    transition: all;
+}
+
+a:hover, #social-media a:hover{
+    color: #000;
+    font-weight: bold;
+}
+#social-media .container3{
+    display: inline-block;
+    width: 80%;
+    text-align: center;  
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.facebook,
+.whatsapp,
+.instagram{
+    display: inline-block;
+    margin: 2%;
+    font-size:small;    
+}
+
+#social-media img{
+    width: 90px;
+    height: auto;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.brown{
+    color: #9CC3D5FF;
+    display: block;
+    margin: 20px;
+}
+.contact img{
+    width: 20px;
+}
+
+
+
+
+
+/*       MEDIA QUERY      */
+
+/*  Tablet */
+@media screen and (max-width:768px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .multiple img {
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    }
+
+    #services{
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        text-align: center;
+    }
+
+    #services .container2{
+       text-align: center;
+       float: none;
+       width: 100%;
+       margin-bottom: 20px;
+       overflow: none;
+       padding: 20px;
+       box-sizing: border-box;
+    }
+
+    .lightening,
+    .bedding,
+    .decorations,
+    .furniture{
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 5%;
+        text-align: center;
+        float: none;
+    }
+
+    .image-description01,
+    .image-description02,
+    .image-description03,
+    .image-description04{
+        text-align: center;
+        padding: 5%;
+        float: none;
+        margin-right: 10px;
+    }
+
+    .newsletter h3{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    label{
+        margin-left: -60px;
+        text-align: left;
+    }
+}
+
+
+
+/*       Phone       */
+@media (max-width: 640px) { 
+    .intro{
+        padding: 7%;
+    }
+
+    .intro p {
+    margin: 5% 5%;
+    font-size: smaller;
+    }   
+
+    label{
+        margin-left: -60px;
+        text-align: left;
+    }
+
+    .about-us p {
+    margin: 5% 10%;
+    display: inline-block;
+    background-color: #ac835b;
+    padding: 5% 5%;
+    text-align: left;
+    }
+
+    .multiple img {
+    width: 49%;
+    height: 49%;
+    overflow: hidden;
+    }
+}
