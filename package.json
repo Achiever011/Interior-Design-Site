@@ -1,0 +1,16 @@
+{
+  "name": "interior-design-site",
+  "version": "1.0.0",
+  "description": "Blessed Decor - Interior Design Website",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Static HTML site - open Interior-Design-Site-main/Interior Design Site/home.html in browser'",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": ["interior-design", "static-site"],
+  "author": "Blessed Decor",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  }
+}
